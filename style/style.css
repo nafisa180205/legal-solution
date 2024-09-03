@@ -12,3 +12,27 @@
     background-size: cover;
 }
 
+/* copyed this from chat gpt */
+.grid-item {
+    border: 0.5px solid #E7E7E7;
+}
+
+/* Remove border from top edge */
+.grid-item:nth-child(-n+3) {
+    border-top: none;
+}
+
+/* Remove border from bottom edge */
+.grid-item:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+/* Remove border from left edge */
+.grid-item:nth-child(3n+1) {
+    border-left: none;
+}
+
+/* Remove border from right edge */
+.grid-item:nth-child(3n) {
+    border-right: none;
+}
